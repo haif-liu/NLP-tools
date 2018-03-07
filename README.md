@@ -8,27 +8,28 @@ NLP-tools
 
 模型训练
 --
-        corpus文件下放入语料集，语料格式：人民网/nz 1月4日/t 讯/ng 据/p [法国/nsf 国际/n
+corpus文件下放入语料集，语料格式：人民网/nz 1月4日/t 讯/ng 据/p [法国/nsf 国际/n
 
-        执行python train.py 开始训练
+执行python train.py 开始训练
 
-        训练生成嵌入矩阵存入data/data.pkl
+训练生成嵌入矩阵存入data/data.pkl
 
-        训练生成checkpoint存入ckpt
+训练生成checkpoint存入ckpt
 
 模型超参数
 --
-        *分词标记方式：4tags 
-        *嵌入层向量长度：64
-        *BiLstm层数：2
-        *隐藏层节点数：128
-        *最大迭代次数：6
-        *Batch宽度：128
-        *初始学习率：1e-4（采用动态形式，随训练进行而减小步长）
+*分词标记方式：4tags 
+*嵌入层向量长度：64
+*BiLstm层数：2
+*隐藏层节点数：128
+*最大迭代次数：6
+*Batch宽度：128
+*初始学习率：1e-4（采用动态形式，随训练进行而减小步长）
     
 模型测试
 --
-        将待分词项写入test/test文件中，执行python model_test.py，生成结果存入test/test_result。
+将待分词项写入test/test文件中，执行python model_test.py，生成结果存入test/test_result。
+
 现状
 --
 目前模型尚处于初步测试成功，分词部分完成，正确率94%（有待提高，超参数稍后公布）。

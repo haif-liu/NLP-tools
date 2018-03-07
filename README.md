@@ -8,13 +8,13 @@ NLP-tools
 
 模型训练
 --
-corpus文件下放入语料集，语料格式：人民网/nz 1月4日/t 讯/ng 据/p [法国/nsf 国际/n
+corpus文件下放入语料集，语料格式：人民网/nz 1月4日/t 讯/ng 据/p [法国/nsf 国际/n。
 
-执行python train.py 开始训练
+执行python train.py 开始训练。
 
-训练生成嵌入矩阵存入data/data.pkl
+训练生成嵌入矩阵存入data/data.pkl。
 
-训练生成checkpoint存入ckpt
+训练生成checkpoint存入ckpt。
 
 模型超参数
 --

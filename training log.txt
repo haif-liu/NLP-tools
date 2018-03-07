@@ -1,0 +1,103 @@
+E:\workspace\python_space\NLP-tools>python train.py
+C:\Users\admin\Anaconda3\lib\site-packages\h5py\__init__.py:34: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+语料加载完成！
+X_train.shape=(577856, 200), y_train.shape=(577856, 200);
+X_valid.shape=(144465, 200), y_valid.shape=(144465, 200);
+X_test.shape=(180581, 200), y_test.shape=(180581, 200)
+Creating the data generator ...
+Finished creating the data generator.
+训练集、验证集、测试集拆分完成！
+(?, 8)
+(?, 200, 8)
+C:\Users\admin\Anaconda3\lib\site-packages\tensorflow\python\ops\gradients_impl.py:96: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+Finished training the bi-lstm model.
+模型定义完成！
+2018-03-07 08:22:06.915525: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2018-03-07 08:22:07.293302: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\common_runtime\gpu\gpu_device.cc:1030] Found device 0 with properties:
+name: GeForce GTX 1070 major: 6 minor: 1 memoryClockRate(GHz): 1.7845
+pciBusID: 0000:01:00.0
+totalMemory: 8.00GiB freeMemory: 6.64GiB
+2018-03-07 08:22:07.293774: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\common_runtime\gpu\gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1070, pci bus id: 0000:01:00.0, compute capability: 6.1)
+EPOCH 1， lr=0.0001
+        training loss=54.0773 ;  valid acc= 0.676108
+        training loss=25.9144 ;  valid acc= 0.807089
+        training loss=20.3211 ;  valid acc= 0.824991
+        training loss=18.1391 ;  valid acc= 0.836864
+        training loss=16.592 ;  valid acc= 0.846192
+        training 577856, loss=26.9978
+Epoch training 577856, loss=26.9978, speed=2376.42 s/epoch
+EPOCH 2， lr=0.0001
+        training loss=15.1774 ;  valid acc= 0.854086
+        training loss=13.9325 ;  valid acc= 0.860176
+        training loss=12.9059 ;  valid acc= 0.86575
+        training loss=11.9208 ;  valid acc= 0.871107
+        training loss=11.0225 ;  valid acc= 0.876425
+        training 577856, loss=12.9897
+Epoch training 577856, loss=12.9897, speed=2368.45 s/epoch
+EPOCH 3， lr=0.0001
+        training loss=10.2134 ;  valid acc= 0.880896
+        training loss=9.53909 ;  valid acc= 0.884615
+        training loss=8.92343 ;  valid acc= 0.888575
+        training loss=8.41503 ;  valid acc= 0.891346
+        training loss=7.97791 ;  valid acc= 0.894022
+the save path is  ckpt\bi-lstm.ckpt-3
+词向量为：
+[[-0.02780512  0.01955058 -0.01836138 ... -0.00049645  0.00404052
+  -0.0065695 ]
+ [ 0.13585153 -0.12165283  0.0326659  ...  0.04658867  0.09128787
+  -0.10968351]
+ [ 0.10163385 -0.11012746 -0.16596346 ...  0.15059061  0.1349636
+  -0.12864481]
+ ...
+ [ 0.00058708  0.01560438 -0.00586053 ...  0.02895907 -0.00465407
+  -0.01896523]
+ [ 0.00937168 -0.00664991  0.01807277 ...  0.01242    -0.0117001
+   0.00779093]
+ [-0.01333823 -0.02412543 -0.0204472  ...  0.01597568  0.00528469
+  -0.0188757 ]]
+        training 577856, loss=9.01286
+Epoch training 577856, loss=9.01286, speed=2376.71 s/epoch
+EPOCH 4， lr=0.0001
+        training loss=7.55432 ;  valid acc= 0.89623
+        training loss=7.19263 ;  valid acc= 0.897788
+        training loss=6.92938 ;  valid acc= 0.900212
+        training loss=6.66893 ;  valid acc= 0.901805
+        training loss=6.39387 ;  valid acc= 0.90309
+        training 577856, loss=6.94758
+Epoch training 577856, loss=6.94758, speed=2372.22 s/epoch
+EPOCH 5， lr=0.0001
+        training loss=6.21165 ;  valid acc= 0.904044
+        training loss=5.99069 ;  valid acc= 0.905713
+        training loss=5.90331 ;  valid acc= 0.90682
+        training loss=5.74516 ;  valid acc= 0.908152
+        training loss=5.60618 ;  valid acc= 0.909339
+        training 577856, loss=5.89094
+Epoch training 577856, loss=5.89094, speed=2370.76 s/epoch
+EPOCH 6， lr=0.0001
+        training loss=5.45892 ;  valid acc= 0.910451
+        training loss=5.3511 ;  valid acc= 0.911561
+        training loss=5.2619 ;  valid acc= 0.91265
+        training loss=5.18256 ;  valid acc= 0.913186
+        training loss=5.07381 ;  valid acc= 0.914417
+the save path is  ckpt\bi-lstm.ckpt-6
+词向量为：
+[[-0.02780512  0.01955058 -0.01836138 ... -0.00049645  0.00404052
+  -0.0065695 ]
+ [ 0.1182595  -0.14080282  0.10225452 ...  0.00174901  0.09544064
+  -0.11739267]
+ [ 0.10367282 -0.14857952 -0.15872334 ...  0.11469934  0.09896136
+  -0.13784654]
+ ...
+ [ 0.0035022   0.01252407  0.00353012 ...  0.02374485 -0.00692229
+  -0.02684188]
+ [ 0.01830211 -0.0096279   0.02756265 ...  0.02180789 -0.02098867
+  -0.00146235]
+ [-0.00429942 -0.03310496 -0.01717094 ...  0.01909122  0.00206108
+  -0.02814145]]
+        training 577856, loss=5.26552
+Epoch training 577856, loss=5.26552, speed=2398.55 s/epoch
+**TEST RESULT:
+**Test 180581, acc=0.91454
+模型训练完成！

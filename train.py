@@ -27,7 +27,7 @@ class BiLSTMTrain(object):
         decay = 0.85
         max_epoch = 5
         tr_batch_size = 128
-        max_max_epoch = 6  # 最大训练的epoch量
+        max_max_epoch = 9  # 最大训练的epoch量
         display_num = 5  # 每个 epoch 显示是个结果
         tr_batch_num = int(self.data_train.y.shape[0] / tr_batch_size)  # 每个 epoch 中包含的 batch 数
         display_batch = int(tr_batch_num / display_num)  # 每训练 display_batch 之后输出一次

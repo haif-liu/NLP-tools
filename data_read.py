@@ -47,8 +47,8 @@ class DataHandler(object):
             print(self.rootDir)
             for dirName, subdirList, fileList in os.walk(self.rootDir):
                 # curDir = os.path.join(self.rootDir, dirName)
-                for file in fileList:
-                    if file.endswith(".txt"):
+                for file in fileList:                   
+                    if file.endswith(".txt"): 
                         curFile = os.path.join(dirName, file)
                         print("processing:%s" % (curFile))
                         with open(curFile, "r", encoding='utf-8') as fp:

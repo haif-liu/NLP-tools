@@ -11,7 +11,7 @@ from tensorflow.contrib import crf
 
 class BiLSTMTest(object):
     def __init__(self, data=None, model_path='ckpt/',
-                 test_file='test/test', test_result='test/test_result'):
+                 test_file='test/test.txt', test_result='test/test_result.txt'):
         self.data = data
         self.model_path = model_path
         self.test_file = test_file
@@ -87,6 +87,7 @@ class BiLSTMTest(object):
                     for line in fp.readlines():
                         print(line.strip())
                         result = self.cut_word(line.strip())
+
                         rss = ''
                         for each in result:
                             if isinstance(each, list):
@@ -135,13 +136,13 @@ if __name__ == '__main__':
 
     data = readData.DataHandler()
     data.loadData()
-
+    print('加载字典完成')
     test = BiLSTMTest(data)
 
     if test.isload:
         # result_new = test.cut_word(sentence)
         # rss = ''
         # for each in result_new:
-        #     rss = rss + each + ' / '
+        #     rss = rss + str(each) + ' / '
         # print(rss)
         test.testfile()

@@ -15,9 +15,9 @@ class BiLSTMModel(object):
         # config
         self.timestep_size = self.max_len = max_len  # 单个输入的句子长度;也即一次完整的样本输入的大小
         self.vocab_size = vocab_size  # 样本中不同字的个数+1(padding 0)，根据处理数据的时候得到
-        self.input_size = self.embedding_size = 64  # 字向量长度
+        self.input_size = self.embedding_size = 100  # 字向量长度
         self.class_num = class_num  # 标记类型
-        self.hidden_size = 128  # 隐含层节点数
+        self.hidden_size = 256  # 隐含层节点数
         self.layer_num = 2  # bi-lstm 层数
         self.max_grad_norm = 5.0  # 最大梯度（超过此值的梯度将被裁剪）
         self.lr = tf.placeholder(tf.float32, [])

@@ -14,90 +14,129 @@ C:\Users\admin\Anaconda3\lib\site-packages\tensorflow\python\ops\gradients_impl.
   "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
 Finished training the bi-lstm model.
 模型定义完成！
-2018-03-07 08:22:06.915525: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
-2018-03-07 08:22:07.293302: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\common_runtime\gpu\gpu_device.cc:1030] Found device 0 with properties:
+2018-03-07 23:49:20.920454: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2018-03-07 23:49:21.242814: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\common_runtime\gpu\gpu_device.cc:1030] Found device 0 with properties:
 name: GeForce GTX 1070 major: 6 minor: 1 memoryClockRate(GHz): 1.7845
 pciBusID: 0000:01:00.0
 totalMemory: 8.00GiB freeMemory: 6.64GiB
-2018-03-07 08:22:07.293774: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\common_runtime\gpu\gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1070, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2018-03-07 23:49:21.242926: I C:\tf_jenkins\home\workspace\rel-win\M\windows-gpu\PY\36\tensorflow\core\common_runtime\gpu\gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1070, pci bus id: 0000:01:00.0, compute capability: 6.1)
 EPOCH 1， lr=0.0001
-        training loss=54.0773 ;  valid acc= 0.676108
-        training loss=25.9144 ;  valid acc= 0.807089
-        training loss=20.3211 ;  valid acc= 0.824991
-        training loss=18.1391 ;  valid acc= 0.836864
-        training loss=16.592 ;  valid acc= 0.846192
-        training 577856, loss=26.9978
-Epoch training 577856, loss=26.9978, speed=2376.42 s/epoch
+        training loss=41.1536 ;  valid acc= 0.785421
+        training loss=19.945 ;  valid acc= 0.824091
+        training loss=17.0548 ;  valid acc= 0.839269
+        training loss=15.2268 ;  valid acc= 0.85132
+        training loss=13.8047 ;  valid acc= 0.86021
+        training 577856, loss=21.4301
+Epoch training 577856, loss=21.4301, speed=1845.73 s/epoch
 EPOCH 2， lr=0.0001
-        training loss=15.1774 ;  valid acc= 0.854086
-        training loss=13.9325 ;  valid acc= 0.860176
-        training loss=12.9059 ;  valid acc= 0.86575
-        training loss=11.9208 ;  valid acc= 0.871107
-        training loss=11.0225 ;  valid acc= 0.876425
-        training 577856, loss=12.9897
-Epoch training 577856, loss=12.9897, speed=2368.45 s/epoch
+        training loss=12.5993 ;  valid acc= 0.867564
+        training loss=11.5624 ;  valid acc= 0.874858
+        training loss=10.549 ;  valid acc= 0.881315
+        training loss=9.7011 ;  valid acc= 0.886556
+        training loss=8.98994 ;  valid acc= 0.890765
+        training 577856, loss=10.6787
+Epoch training 577856, loss=10.6787, speed=1858.42 s/epoch
 EPOCH 3， lr=0.0001
-        training loss=10.2134 ;  valid acc= 0.880896
-        training loss=9.53909 ;  valid acc= 0.884615
-        training loss=8.92343 ;  valid acc= 0.888575
-        training loss=8.41503 ;  valid acc= 0.891346
-        training loss=7.97791 ;  valid acc= 0.894022
-the save path is  ckpt\bi-lstm.ckpt-3
+        training loss=8.36016 ;  valid acc= 0.895155
+        training loss=7.87316 ;  valid acc= 0.898308
+        training loss=7.40587 ;  valid acc= 0.900959
+        training loss=7.01875 ;  valid acc= 0.903393
+        training loss=6.73248 ;  valid acc= 0.905022
+the save path is  ./ckpt/bi-lstm.ckpt-3
 词向量为：
-[[-0.02780512  0.01955058 -0.01836138 ... -0.00049645  0.00404052
-  -0.0065695 ]
- [ 0.13585153 -0.12165283  0.0326659  ...  0.04658867  0.09128787
-  -0.10968351]
- [ 0.10163385 -0.11012746 -0.16596346 ...  0.15059061  0.1349636
-  -0.12864481]
+[[ 0.00283884  0.0098491  -0.00381593 ...  0.0121267   0.01736321
+   0.02688112]
+ [-0.11672854  0.05223868  0.04460585 ... -0.03449676 -0.10654886
+   0.12864034]
+ [-0.06299763  0.0778223  -0.01511805 ... -0.06637525 -0.07328885
+   0.07561834]
  ...
- [ 0.00058708  0.01560438 -0.00586053 ...  0.02895907 -0.00465407
-  -0.01896523]
- [ 0.00937168 -0.00664991  0.01807277 ...  0.01242    -0.0117001
-   0.00779093]
- [-0.01333823 -0.02412543 -0.0204472  ...  0.01597568  0.00528469
-  -0.0188757 ]]
-        training 577856, loss=9.01286
-Epoch training 577856, loss=9.01286, speed=2376.71 s/epoch
+ [ 0.00786713  0.01138825  0.021643   ... -0.00091451 -0.01636374
+  -0.00868526]
+ [-0.02821703 -0.00099603 -0.0156067  ... -0.01946234 -0.02038347
+   0.01682091]
+ [ 0.00585029  0.01730769 -0.02620162 ... -0.02472601 -0.01689223
+   0.03149492]]
+        training 577856, loss=7.47697
+Epoch training 577856, loss=7.47697, speed=1867.57 s/epoch
 EPOCH 4， lr=0.0001
-        training loss=7.55432 ;  valid acc= 0.89623
-        training loss=7.19263 ;  valid acc= 0.897788
-        training loss=6.92938 ;  valid acc= 0.900212
-        training loss=6.66893 ;  valid acc= 0.901805
-        training loss=6.39387 ;  valid acc= 0.90309
-        training 577856, loss=6.94758
-Epoch training 577856, loss=6.94758, speed=2372.22 s/epoch
+        training loss=6.39584 ;  valid acc= 0.907151
+        training loss=6.17868 ;  valid acc= 0.908279
+        training loss=5.98241 ;  valid acc= 0.910288
+        training loss=5.75388 ;  valid acc= 0.911932
+        training loss=5.54624 ;  valid acc= 0.913089
+        training 577856, loss=5.9711
+Epoch training 577856, loss=5.9711, speed=1861.99 s/epoch
 EPOCH 5， lr=0.0001
-        training loss=6.21165 ;  valid acc= 0.904044
-        training loss=5.99069 ;  valid acc= 0.905713
-        training loss=5.90331 ;  valid acc= 0.90682
-        training loss=5.74516 ;  valid acc= 0.908152
-        training loss=5.60618 ;  valid acc= 0.909339
-        training 577856, loss=5.89094
-Epoch training 577856, loss=5.89094, speed=2370.76 s/epoch
+        training loss=5.35659 ;  valid acc= 0.914706
+        training loss=5.22959 ;  valid acc= 0.915962
+        training loss=5.09024 ;  valid acc= 0.917872
+        training loss=4.96163 ;  valid acc= 0.918954
+        training loss=4.87123 ;  valid acc= 0.919619
+        training 577856, loss=5.10187
+Epoch training 577856, loss=5.10187, speed=1861.08 s/epoch
 EPOCH 6， lr=0.0001
-        training loss=5.45892 ;  valid acc= 0.910451
-        training loss=5.3511 ;  valid acc= 0.911561
-        training loss=5.2619 ;  valid acc= 0.91265
-        training loss=5.18256 ;  valid acc= 0.913186
-        training loss=5.07381 ;  valid acc= 0.914417
-the save path is  ckpt\bi-lstm.ckpt-6
+        training loss=4.70359 ;  valid acc= 0.921805
+        training loss=4.62127 ;  valid acc= 0.922991
+        training loss=4.52793 ;  valid acc= 0.924323
+        training loss=4.43752 ;  valid acc= 0.925071
+        training loss=4.32887 ;  valid acc= 0.926595
+the save path is  ./ckpt/bi-lstm.ckpt-6
 词向量为：
-[[-0.02780512  0.01955058 -0.01836138 ... -0.00049645  0.00404052
-  -0.0065695 ]
- [ 0.1182595  -0.14080282  0.10225452 ...  0.00174901  0.09544064
-  -0.11739267]
- [ 0.10367282 -0.14857952 -0.15872334 ...  0.11469934  0.09896136
-  -0.13784654]
+[[ 0.00283884  0.0098491  -0.00381593 ...  0.0121267   0.01736321
+   0.02688112]
+ [-0.13774507  0.06512254  0.06394903 ... -0.03134993 -0.15117072
+   0.1472423 ]
+ [-0.06454859  0.07921974  0.01057536 ... -0.08864446 -0.09318383
+   0.09922507]
  ...
- [ 0.0035022   0.01252407  0.00353012 ...  0.02374485 -0.00692229
-  -0.02684188]
- [ 0.01830211 -0.0096279   0.02756265 ...  0.02180789 -0.02098867
-  -0.00146235]
- [-0.00429942 -0.03310496 -0.01717094 ...  0.01909122  0.00206108
-  -0.02814145]]
-        training 577856, loss=5.26552
-Epoch training 577856, loss=5.26552, speed=2398.55 s/epoch
+ [-0.00109609  0.00750069  0.03048141 ... -0.00412111 -0.02427513
+   0.00040682]
+ [-0.03760966 -0.00108704 -0.01397004 ... -0.01636342 -0.01090957
+   0.02616832]
+ [-0.0035301   0.02658978 -0.02910447 ... -0.01632603 -0.02604882
+   0.04080283]]
+        training 577856, loss=4.52377
+Epoch training 577856, loss=4.52377, speed=1862.07 s/epoch
+EPOCH 7， lr=8.5e-05
+        training loss=4.27012 ;  valid acc= 0.927166
+        training loss=4.16057 ;  valid acc= 0.928653
+        training loss=4.12552 ;  valid acc= 0.929559
+        training loss=4.071 ;  valid acc= 0.93015
+        training loss=4.01447 ;  valid acc= 0.930985
+        training 577856, loss=4.12801
+Epoch training 577856, loss=4.12801, speed=1885.5 s/epoch
+EPOCH 8， lr=7.225e-05
+        training loss=3.95531 ;  valid acc= 0.931686
+        training loss=3.89157 ;  valid acc= 0.932461
+        training loss=3.86546 ;  valid acc= 0.932754
+        training loss=3.83503 ;  valid acc= 0.933552
+        training loss=3.79251 ;  valid acc= 0.934516
+        training 577856, loss=3.86791
+Epoch training 577856, loss=3.86791, speed=1868.56 s/epoch
+EPOCH 9， lr=6.14125e-05
+        training loss=3.70956 ;  valid acc= 0.934965
+        training loss=3.71149 ;  valid acc= 0.935273
+        training loss=3.67774 ;  valid acc= 0.93582
+        training loss=3.67205 ;  valid acc= 0.936273
+        training loss=3.63955 ;  valid acc= 0.936728
+the save path is  ./ckpt/bi-lstm.ckpt-9
+词向量为：
+[[ 0.00283884  0.0098491  -0.00381593 ...  0.0121267   0.01736321
+   0.02688112]
+ [-0.14195432  0.07010224  0.07426517 ... -0.04410216 -0.14137644
+   0.14236076]
+ [-0.07637453  0.09031251  0.01563332 ... -0.08982727 -0.12310885
+   0.13091722]
+ ...
+ [-0.00261841  0.00893926  0.03653866 ... -0.00967896 -0.02824939
+   0.00194516]
+ [-0.0398      0.00158561 -0.01957847 ... -0.0180629  -0.00407768
+   0.03272259]
+ [-0.00674215  0.02508836 -0.0222075  ... -0.00951194 -0.03288963
+   0.04753314]]
+        training 577856, loss=3.68211
+Epoch training 577856, loss=3.68211, speed=1863.9 s/epoch
 **TEST RESULT:
-**Test 180581, acc=0.91454
+**Test 180581, acc=0.936994
 模型训练完成！
